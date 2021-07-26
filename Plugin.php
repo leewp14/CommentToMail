@@ -75,14 +75,6 @@ class CommentToMail_Plugin implements Typecho_Plugin_Interface
                 $options = Typecho_Widget::widget('Widget_Options');
                 echo "<a href='https://blog.uniartisan.com/archives/CommentToMail.html'>请在设置前仔细阅读相关说明</a>";
 
-                /* 检查版本更新 */
-                if (in_array('check_beta', Helper::options()->plugin('CommentToMail')->other) == true){
-                        $newVer = self::check_update("betaVer");
-                }
-                else{
-                        $newVer = self::check_update("newVer");
-                }
-                
                 if (strcmp(self::$version,$newVer) < 0 && $newVer != "Error") {
                         Typecho_Widget::widget('Widget_Notice')->set(_t('请到 https://github.com/uniartisan/CommentToMail 更新插件，当前最新版：' . $newVer), 'success');
                 } elseif ($newVer == "Error") {
