@@ -322,7 +322,7 @@ class CommentToMail_Action extends Typecho_Widget implements Widget_Interface_Do
                     $mailer->SMTPSecure = "tls";
                 }
 
-                $mailer->Host     = $this->_cfg->host;
+                $mailer->Host     = gethostbyname($this->_cfg->host);
                 $mailer->Port     = $this->_cfg->port;
                 $mailer->Username = $this->_cfg->user;
                 $mailer->Password = $this->_cfg->pass;
