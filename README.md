@@ -1,5 +1,21 @@
 # CommentToMail
 
+## 注意
+本插件均为个人修改使用 简单说，Use at your own risk!
+
+感谢@uniartisan维护此插件。若插件有任何问题，请先尝试使用[原版插件](https://github.com/uniartisan/CommentToMail)！
+
+此插件修改了几个东西：
+- 屏蔽了更新，因为更新有问题
+- 每次发送会强制索取并使用smtp的IPv4地址，避免在IPv6的服务器上通过 smtp.gmail.com 发送会严重超时
+- 修改了邮件的模板设计（如下图）
+![image.png](https://i.loli.net/2021/07/28/oCc8W1LSsKa9hnJ.png)
+![image.png](https://i.loli.net/2021/07/28/MlPdfuXvrKE32QU.png)
+
+以下是原版插件的内容：
+
+---
+
 **支持的 Typecho 版本 >=1.0**
 
 ## 版权申明
