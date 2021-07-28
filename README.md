@@ -9,6 +9,7 @@
 - 屏蔽了更新，因为更新有问题
 - 每次发送会强制索取并使用smtp的IPv4地址，避免在IPv6的服务器上通过 smtp.gmail.com 发送会严重超时
 - 修改了邮件的模板设计（如下图）
+
 ![image.png](https://i.loli.net/2021/07/28/oCc8W1LSsKa9hnJ.png)
 ![image.png](https://i.loli.net/2021/07/28/MlPdfuXvrKE32QU.png)
 
