@@ -6,7 +6,7 @@
             color: #555555;
             font-family: 'Century Gothic','Trebuchet MS','Hiragino Sans GB',微软雅黑,'Microsoft Yahei',Tahoma,Helvetica,Arial,'SimSun',sans-serif;
             font-size: 12px;
-            box-shadow: 0px 0px 14px lightgray;
+            border: 1px solid lightgray;
             border-radius: .5rem;">
     <h2 style=" border-bottom: 1px solid #DDD;
                 font-size: 14px;
@@ -37,16 +37,17 @@
                     margin: 18px 0">
             {text}
             <br>
-            <a href="{permalink}" target="_blank">
-                <button style=" padding: 0.4rem .5rem;
-                                margin: .7rem 0rem .5rem 0rem;
-                                width: 100%;
-                                border: 0;background: gray;
-                                color: white;
-                                border-radius: .1rem;
-                                cursor: pointer;">
-                    查看回复
-                </button>
+            <a style="  padding: 0.4rem .5rem;
+                        margin: .7rem 0rem .5rem 0rem;
+                        width: 100%;
+                        border: 0;
+                        background: gray;
+                        color: white;
+                        border-radius: .1rem;
+                        display: block;
+                        text-decoration: none;
+                        text-align: center;" href="{permalink}" target="_blank">
+                查看回复
             </a>
         </p>
         <p>
@@ -62,16 +63,17 @@
             <br>
             用户IP：{ip}
             <br>
-            <a href="{manage}" target="_blank">
-                <button style=" padding: 0.4rem .5rem;
-                                margin: .7rem 0rem .5rem 0rem;
-                                width: 100%;
-                                border: 0;background: gray;
-                                color: white;
-                                border-radius: .1rem;
-                                cursor: pointer;">
-                    管理评论
-                </button>
+            <a style="  padding: 0.4rem .5rem;
+                        margin: .7rem 0rem .5rem 0rem;
+                        width: 100%;
+                        border: 0;
+                        background: gray;
+                        color: white;
+                        border-radius: .1rem;
+                        display: block;
+                        text-decoration: none;
+                        text-align: center;" href="{manage}" target="_blank">
+                管理评论
             </a>
         </p>
         <p style="  text-align: center;">
